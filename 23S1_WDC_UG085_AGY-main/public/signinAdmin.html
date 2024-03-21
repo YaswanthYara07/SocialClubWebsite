@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/99dda13991.js" crossorigin="anonymous"></script>
+        <title>Social Club</title>
+        <link rel="stylesheet" type="text/css" href="./stylesheets/signin.css">
+<script src="./javascripts/AJAX.js"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <img src="brand.png" alt="Logo" id="logo">
+                 <!--Page Buttons and search bar modifed from https://www.youtube.com/watch?v=CQZxeoQeo5c&ab_channel=PRAROZ-->
+                <div id="header_buttons">
+                    <ul class="ul_h_buttons">
+                    <li>
+                        <a href="homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="eventpage.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="imageslidder.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="Contact_Us.html">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="class_search">
+                    <input class="input_search" type="Search" name="" placeholder="Search...">
+                    <button class="search_button" type="button">Find</button>
+                </div>
+            </div>
+        </header>
+        <form class="alignment">
+        <h1>Sign In Admin</h1>
+
+                <h2 class="above_textbox">Username</h2>
+                <input type="text" id="user_name" name="user_name" class="name_textbox" placeholder="Enter Username">
+                <h2 class="above_textbox">Password</h2>
+                <input type="password" id="password" name="password" class="name_textbox" placeholder="Enter Password">
+
+            <div id="submit_button" style="text-align:center;">
+                <br><br>
+                <button  type="reset" onclick="adminin()">Submit</button>
+            </div>
+            <p id="error"><strong>Incorrect Username and Password </strong></p>
+            <a href="sign_up.html">Make an account</a>
+        </form>
+        <div id="g_id_onload"
+     data-client_id="32768638516-ri1fdejp4quue35h0hi39vko4nncp0jt.apps.googleusercontent.com"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-callback="do_google_login"
+     data-auto_prompt="false">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-shape="pill"
+     data-theme="filled_black"
+     data-text="signin_with"
+     data-size="large"
+     data-logo_alignment="left">
+</div>
+
+            <footer>
+                <div id="main_footer">
+                    <div id="contant_info">
+                        <h3 id="footer_titles">Contacts</h3>
+                        <p id="p_contact">                                   Phone Number:0412345678                                                   Email:thisDoesntWork@yahoo.com                                                   Fax:2039229129202</p>
+                    </div>
+                    <hr style="margin-left:300px;margin-right: 300px;">
+                    <h3 class="footer_titles">Other Pages</h3>
+                    <div class="header_buttons">
+                        <ul id="ul_h_buttons_2">
+                        <li class="ul_li_footer">
+                            <a href="homepage.html">Home</a>
+                        </li>
+                        <li class="ul_li_footer">
+                            <a href="eventpage.html">Events</a>
+                        </li>
+                        <li class="ul_li_footer">
+                            <a href="imageslidder.html">Gallery</a>
+                        </li>
+                        <li class="ul_li_footer">
+                            <a href="FAQ.html">FAQ</a>
+                        </li>
+                        <li class="ul_li_footer">
+                            <a href="Contact_Us.html">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <hr style="margin-left:300px;margin-right: 300px;margin-top: 100px;">
+                    <h3 id="footer_titles_3">Follow Us On</h3>
+                    <span style="font-size: 2em; color: #BFCFD4;">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class='fa fa-share-alt'></i>
+                    </span>
+                </div>
+            </footer>
+    </body>
+</html>

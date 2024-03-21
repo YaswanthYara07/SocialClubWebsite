@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/99dda13991.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <script src="./javascripts/java.js"></script>
+  <script src="./javascripts/AjAX.js"></script>
+  <title>Social Club</title>
+</head>
+
+<body onload="getPost(), memberPost()">
+  <header id="header">
+    <!--Page Buttons and search bar modified from https://www.youtube.com/watch?v=CQZxeoQeo5c&ab_channel=PRAROZ-->
+    <div class="header_buttons">
+      <ul class="ul_h_buttons">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="signinmain.html">Login</a>
+        </li>
+        <li>
+          <a href="eventpage.html">Events</a>
+        </li>
+
+        <li>
+          <a href="FAQ.html">FAQ</a>
+        </li>
+        <li>
+          <a href="Contact_Us.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="class_search">
+      <input class="input_search" type="Search" name="" placeholder="Search...">
+      <button type="button" class="search_button">Find</button>
+    </div>
+  </header>
+
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">New Topic</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="hide">
+      <section id="introduction">
+        <h1>Welcome to Club X Forum Page</h1>
+        <p>Club Description</p>
+        <p>What people here can talk about</p>
+      </section>
+
+      <section id="discussion">
+        <h2 id="post_t">Discussion</h2>
+        <div class="post">
+          <h3>Topic 1</h3>
+          <p id="post_c">Post content</p>
+          <a href="#" class="reply">Reply</a>
+
+          <div class="post">
+            <h4>Not Bob</h4>
+            <p>Agree, this is a great topic.</p>
+          </div>
+          <div class="post">
+            <h4>Bob</h4>
+            <p>Disagree, I think there are better topics out there.</p>
+          </div>
+
+        </div>
+        <div class="post">
+          <h3>Topic 2</h3>
+          <p>Post content</p>
+
+        </div>
+      </section>
+    </div>
+    <button type="submit" id="EVENTS" onclick="posts()" >Post an update</button>
+    <div id="hidden">
+      <h2>Create Post</h2>
+      <form>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="4" required></textarea>
+
+
+        <h3>Public or Private Posts</h3>
+        <input type="radio" id="post_public" name="post_publicPrivate" value="public">
+        <label for="post_public"> Public</label><br>
+        <input type="radio" id="post_private" name="post_publicPrivate" value="private">
+        <label for="post_private"> Private</label><br>
+
+
+        <input type="submit" value="Submit" onclick="posted()">
+      </form>
+    </div>
+
+  </main>
+
+  <footer id="main-footer">
+    <div id="contant_info">
+      <h3 class="footer_titles">Contacts</h3>
+      <pre>                                  Phone Number:0412345678                                                   Email:thisDoesntWork@yahoo.com                                                   Fax:2039229129202</pre>
+    </div>
+    <hr style="margin-left:300px;margin-right: 300px;">
+    <h3 class="footer_titles">Other Pages</h3>
+    <div class="header_buttons">
+      <ul id="ul_h_buttons_2">
+        <li class="ul_li_footer">
+          <a href="homepage.html">Home</a>
+        </li>
+        <li class="ul_li_footer">
+          <a href="sign_up.html">Login</a>
+        </li>
+        <li class="ul_li_footer">
+          <a href="eventpage.html">Events</a>
+        </li>
+        <li class="ul_li_footer">
+          <a href="imageSlidder.html">Gallery</a>
+        </li>
+        <li class="ul_li_footer">
+          <a href="FAQ.html">FAQ</a>
+        </li>
+        <li class="ul_li_footer">
+          <a href="Contact_Us.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <hr style="margin-left:300px;margin-right: 300px;margin-top: 100px;">
+    <h3 id="footer_titles_3">Follow Us On</h3>
+    <span style="font-size: 2em; color: #BFCFD4;">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fas fa-share-alt"></i>
+    </span>
+  </footer>
+</body>
+
+</html>

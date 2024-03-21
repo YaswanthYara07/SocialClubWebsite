@@ -1,0 +1,347 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.ul_li_header1{
+    list-style: none;
+    font-size:14px;
+    position: absolute;
+     top: 20px;
+    right: 20px;
+   margin-right: 440px;
+   margin-top:30px;
+   padding-right:8px;
+   font-size:20px;
+}
+
+.ul_li_header2{
+    list-style: none;
+    font-size:14px;
+    position: absolute;
+     top: 20px;
+    right: 20px;
+    margin-right:360px;
+   margin-top:30px;
+   padding-right:8px;
+   font-size:20px;
+}
+
+.ul_li_header3{
+    list-style: none;
+    font-size:14px;
+    position: absolute;
+     top: 20px;
+    right: 20px;
+    margin-right:280px;
+   margin-top:30px;
+   padding-right:8px;
+   font-size:20px;
+
+}
+
+.ul_li_header4{
+    list-style: none;
+    font-size:14px;
+    position: absolute;
+     top: 20px;
+    right: 20px;
+    margin-right:200px;
+    margin-top:30px;
+    font-size:20px;
+}
+
+.ul_li_header5{
+    list-style: none;
+    font-size:14px;
+    position: absolute;
+     top: 20px;
+    right: 20px;
+    margin-right:120px;
+   margin-top:30px;
+   font-size:20px;
+}
+
+.ul_li_header6{
+    list-style: none;
+    font-size:14px;
+    position: absolute;
+     top: 20px;
+    right: 20px;
+    margin:30px;
+   margin-top:30px;
+   font-size:20px;
+}
+
+.ul_h_buttons{
+    font-size:32px;
+    color:black;
+}
+
+
+
+
+
+
+
+#logo {
+    height: 40px;
+}
+
+.input_search {
+    width: 200px;
+    padding: 5px;
+}
+
+.search_button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Main section */
+#U {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+button {
+    padding: 10px 20px;
+    background-color:red;
+    border-radius: 2px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+.but1 {
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.profilepic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.timeline {
+    text-align: center;
+    margin-top: 40px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Div 2 section */
+.div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.fname {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#address_info {
+    margin-top: 40px;
+}
+
+.ps_button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Div 3 section */
+#head {
+    margin-top: 40px;
+}
+
+#educ_qualify {
+    margin-top: 40px;
+}
+
+/* Additional styles */
+
+/* Profile card */
+.div_but1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#heading2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#but_div1 {
+    margin-top: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.b1 {
+    background-color: #4CAF50;
+}
+
+.b2 {
+    background-color: #2196F3;
+}
+
+.b3 {
+    background-color: #f44336;
+}
+
+.header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 14px;
+    color: #777;
+}
+
+#user_view {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#user_view h4 {
+    font-size: 18px;
+}
+
+#user_view h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* My Account section */
+#heading1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#but_div {
+    margin-top: 10px;
+}
+
+#user_info {
+    margin-top: 40px;
+}
+
+#user_info h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#user_info label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#user_info input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contact Information section */
+#address_info {
+    margin-top: 40px;
+}
+
+#address_info h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* My Qualifications section */
+.div_but1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#heading1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#but_div1 {
+    margin-top: 10px;
+}
+
+#educ_qualify {
+    margin-top: 40px;
+}
+
+#educ_qualify h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#educ_qualify label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#educ_qualify input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Update password section */
+#update_ps {
+    margin-top: 40px;
+}
+
+#update_ps h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#update_ps label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#update_ps input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+

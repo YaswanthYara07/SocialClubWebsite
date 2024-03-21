@@ -1,0 +1,138 @@
+#header{
+    margin:auto;
+    /*width: 374px;*/
+    height: 50px;
+    padding:12px;
+    background-color: white;
+    border: 1px solid red;
+}
+.header_buttons{
+    width: 400px;
+    float:left;
+    height: 70px;
+}
+/* Modifed From https://www.youtube.com/watch?v=CQZxeoQeo5c&ab_channel=PRAROZ*/
+ul{
+    margin-left: 900px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ul li{
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 6px;
+    font-size:14px;
+
+}
+ul li a{
+    text-decoration: none;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color:lightblue
+}
+.class_search{
+    margin-left:1150px;
+    margin-top:-185px;
+}
+#logo{
+    position:relative;
+    margin-left:-370px;
+    z-index: 1;
+}
+
+.name_textbox{
+    width: 50%;
+    font-size:16pt;
+
+}
+
+#message{
+    width: 50%;
+    font-size:16pt;
+    height: 200px;
+    resize: none;
+}
+
+.alignment{
+    margin-left: 33%;
+}
+
+#submit{
+    height:50px;
+    width:200px;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#main_footer{
+    margin:auto;
+    /*width: 374px;*/
+    height: 400px;
+    padding:12px;
+    background-color: white;
+    border: 1px solid red;
+}
+#contact_info{
+    width:100px;
+    float:left;
+    height: 100px;
+    margin:50px;
+}
+#p_contact{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.footer_titles{
+    text-align: center;
+}
+#ul_h_buttons_2{
+    margin-left: 750px;
+    /*the display lets us change the orientation*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ul_li_footer{
+    list-style: none;
+    margin-right: 200px;
+    font-size:14px;
+
+}
+i.fa-brands{
+    margin-top: 20px;
+    color:black;
+    margin-left: 350px;
+    margin-right: 50px;
+}
+i.fa-twitter{
+    color:black;
+    margin-left: 250px;
+    margin-right: 50px;
+}
+i.fa-share-alt{
+    color:black;
+    margin-left: 250px;
+    margin-right: 50px;
+}
+#footer_titles_3{
+    margin-top: 30px;
+    text-align: center;
+}
+#content_header_2{
+    margin-left: 600px;
+}
+#random_space{
+    height: 100px;
+    background-color: white;
+}

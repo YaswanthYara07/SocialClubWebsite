@@ -1,0 +1,238 @@
+#header{
+    margin:auto;
+    /*width: 374px;*/
+    height: 50px;
+    padding:12px;
+    background-color: white;
+    border: 1px solid red;
+}
+
+footer{
+    padding:200px 0;
+}
+#header_buttons{
+    /*width: 400px;
+    float:left;
+    height: 70px;*/
+
+    /* Positioning of buttons*/
+    margin-top:-1em;
+}
+/* Modifed From https://www.youtube.com/watch?v=CQZxeoQeo5c&ab_channel=PRAROZ*/
+#ul_h_buttons{
+    margin-left: 900px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ul_li_header{
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 6px;
+    font-size:14px;
+
+}
+ul li a{
+    text-decoration: none;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color:lightblue
+}
+.class_search{
+    height:100px;
+    width:100px;
+    margin-left:20em;
+    margin-bottom:300px;
+}
+#logo{
+    position:relative;
+    z-index: 1;
+}
+#main_img{
+    width:1425px;
+    filter:blur(5px);
+}
+#title_img{
+    z-index: 3;
+}
+#home_title{
+    position:relative;
+    font-size: 100px;
+    margin-top: -375px;
+    margin-left: 400px;
+    z-index: 2;
+}
+#title_img_txt{
+    z-index: 2;
+    top: 30px;
+    color:white
+}
+#content_header{
+    margin-top:300px;
+    margin-left: 600px;
+}
+.content_body{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#IMG1{
+    width:500px;
+    height:300px;
+    margin-top:25px;
+    margin-bottom:25px;
+    margin-left: 100px;
+}
+#IMG2{
+    width:500px;
+    height:300px;
+}
+#img2{
+    margin-left:800px;
+    margin-top:-330px;
+}
+#navigation_bar{
+    /*width: 374px;*/
+    height: 500px;
+    width:200px;
+    padding:12px;
+    border: 1px solid red;
+}
+#nav_head{
+    border: 1px solid red;
+    background-color: white;
+    width:224px;
+    height: 75px;
+    margin-left: -13px;
+    margin-top: -13px;
+}
+#h3_nav{
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#main_footer{
+    margin:auto;
+    /*width: 374px;*/
+    height: 400px;
+    padding:12px;
+    background-color: white;
+    border: 1px solid red;
+    align-items: center;
+
+}
+#contact_info{
+    width:100px;
+    float:left;
+    height: 100px;
+    margin:50px;
+}
+#p_contact{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.footer_titles{
+    text-align: center;
+}
+#ul_h_buttons_2{
+    margin-left: 8em;
+    /*the display lets us change the orientation*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ul_li_footer{
+    list-style: none;
+    margin-right: 200px;
+    font-size:14px;
+
+}
+i.fa-brands{
+    margin-top: 20px;
+    color:black;
+    margin-left: 350px;
+    margin-right: 50px;
+}
+i.fa-twitter{
+    color:black;
+    margin-left: 250px;
+    margin-right: 50px;
+}
+i.fa-share-alt{
+    color:black;
+    margin-left: 250px;
+    margin-right: 50px;
+}
+#footer_titles_3{
+    margin-top: 30px;
+    text-align: center;
+}
+#content_header_2{
+    margin-left: 600px;
+}
+#random_space{
+    height: 100px;
+}
+.mainSigninDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  #main_div.pure-button-active {
+    background-color: #333533;
+    color: #F5CB5C;
+    font-weight: bold;
+  }
+
+  #dark_mode_buttons {
+    margin-top: 100px;
+    z-index: 3;
+    position: absolute;
+  }
+
+  .main_n_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+  }
+
+
+.navigation_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color:lightcoral;
+    text-decoration: none;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    border: 1px solid red;
+    border-radius: 8px;
+    align-items: center;
+
+  }
+  .styled{
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position:center;
+  }
+
+  .content-body{
+
+    font-size: 24px;
+    font-family: Sans-serif, Arial;
+
+  }

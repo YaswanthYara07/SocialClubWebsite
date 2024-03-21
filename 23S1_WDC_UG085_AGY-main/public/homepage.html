@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/99dda13991.js" crossorigin="anonymous"></script>
+
+                <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+                <script src="./javascripts/homepage.js" defer></script>
+
+        <title>Social Club</title>
+        <link rel="stylesheet" type="text/css" href="./stylesheets/homepage.css">
+        <style>
+            .ul_h_buttons{
+    margin-left: 900px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ul_li_header{
+    list-style: none;
+    margin-right: 50px;
+    margin-top: -350px;
+    font-size:14px;
+
+}
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <img src="./images/brand.png" alt="Logo" id="logo">
+                 <!--Page Buttons and search bar modifed from https://www.youtube.com/watch?v=CQZxeoQeo5c&ab_channel=PRAROZ-->
+                 <!--System_Admin.html-->
+                <div id="header_buttons">
+                    <ul class="ul_h_buttons">
+                    <li class="ul_li_header">
+                        <a href="signin.html">Login</a>
+                    </li>
+                    <li class="ul_li_header">
+                        <a href="eventpage.html">Events</a>
+                    </li>
+                    <li class="ul_li_header">
+                        <a href="imageSlidder.html">Gallery</a>
+                    </li>
+                    <li class="ul_li_header">
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="ul_li_header">
+                        <a href="Contact_Us.html">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="class_search">
+                    <input class="input_search" type="Search" name="" placeholder="Search...">
+                    <button type="button" class="search_button">Find</button>
+                </div>
+            </div>
+        </header>
+        <div id="main_div" v-bind:class="{'pure-button-active':dark_mode, 'pure-button-primary':dark_mode}">
+        <div id="title_img">
+            <img src="./images/STEM-societies-and-clubs.jpeg" alt="Logo" id="main_img">
+        </div>
+        <div id="title_img_txt">
+            <h1 id="home_title">SOCIAL CLUB</h1>
+        </div>
+        <div id="dark_mode_buttons">
+            <h3>Dark Mode:</h3>
+            <div class="pure-button-group" role="group" aria-label="Nightmode">
+                <button type="button" class="pure-button" onclick="vueinst.dark_mode = false;" v-bind:class="{'pure-button-active':!dark_mode}">OFF</button>
+                <button type="button" class="pure-button" onclick="vueinst.dark_mode = true;" v-bind:class="{'pure-button-active':dark_mode, 'pure-button-primary':dark_mode}">ON</button>
+            </div>
+        </div>
+        <div id="content_header">
+            <h2 id="about_subtitle">What is this about?</h2>
+        </div>
+        <div id="content_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sollicitudin aliquam ultrices sagittis orci a scelerisque. Aliquam nulla facilisi cras fermentum odio. Pharetra massa massa ultricies mi quis hendrerit. Eget dolor morbi non arcu risus quis varius quam. Vestibulum rhoncus est pellentesque elit. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Ut etiam sit amet nisl purus in. Leo urna molestie at elementum eu facilisis sed odio morbi. Fermentum et sollicitudin ac orci. Aliquam sem et tortor consequat id porta nibh venenatis cras. Dui nunc mattis enim ut tellus. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Commodo odio aenean sed adipiscing diam donec. Magnis dis parturient montes nascetur ridiculus mus.</div>
+        <hr style='margin-left:300px;margin-right: 300px;'>
+        <div id="img1">
+             <!--https://ozarks.edu/life-at-ozarks/organizations-and-activities/-->
+             <img src="./images/DSC_0130.jpeg" alt="group of people talking around a table" id="IMG1">
+        </div>
+        <div id="img2">
+            <!--https://www.al-fanarmedia.org/2023/02/extracurricular-activities-boost-students-skills-at-university-and-beyond/-->
+            <img src="./images/NonProfit-1-scaled.webp" alt="group of people cleaning up the enviroment" id="IMG2">
+        </div>
+        <div id="second_main_div">
+            <hr style='margin-left:300px;margin-right: 300px;'>
+            <div id="content_header_2">
+                <h2>Other Information</h2>
+            </div>
+            <div class="content_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sollicitudin aliquam ultrices sagittis orci a scelerisque. Aliquam nulla facilisi cras fermentum odio. Pharetra massa massa ultricies mi quis hendrerit. Eget dolor morbi non arcu risus quis varius quam. Vestibulum rhoncus est pellentesque elit. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Ut etiam sit amet nisl purus in. Leo urna molestie at elementum eu facilisis sed odio morbi. Fermentum et sollicitudin ac orci. Aliquam sem et tortor consequat id porta nibh venenatis cras. Dui nunc mattis enim ut tellus. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Commodo odio aenean sed adipiscing diam donec. Magnis dis parturient montes nascetur ridiculus mus.</div>
+            <hr style='margin-left:300px;margin-right: 300px;'>
+        </div>
+        <div id="random_space">
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="main_footer" v-bind:class="{'pure-button-active':dark_mode, 'pure-button-primary':dark_mode}">
+            <div id="contant_info">
+                <h3 id="footer_titles">Contacts</h3>
+                <pre>                          Phone Number:0412345678                                                   Email:thisDoesntWork@yahoo.com                                                   Fax:2039229129202</pre>
+            </div>
+            <hr style="margin-left:300px;margin-right: 300px;">
+            <h3 class="footer_titles">Other Pages</h3>
+            <div class="header_buttons">
+                <ul id="ul_h_buttons_2">
+                <li id="ul_li_footer">
+                    <a href="project.html">Login</a>
+                </li>
+                <li class="ul_li_footer">
+                    <a href="eventpage.html">Events</a>
+                </li>
+                <li class="ul_li_footer">
+                    <a href="imageSlidder.html">Gallery</a>
+                </li>
+                <li class="ul_li_footer">
+                    <a href="FAQ.html">FAQ</a>
+                </li>
+                <li class="ul_li_footer">
+                    <a href="Contact_Us.html">Contact</a>
+                </li>
+                <li class="ul_li_footer">
+                    <a href="System_Admin.html">Admin</a>
+                </li>
+                </ul>
+            </div>
+            <hr style="margin-left:300px;margin-right: 300px;margin-top: 100px;">
+            <h3 id="footer_titles_3">Follow Us On</h3>
+            <span style="font-size: 2em; color: #BFCFD4;">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa fa-twitter"></i>
+                <i class='fa fa-share-alt'></i>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
+

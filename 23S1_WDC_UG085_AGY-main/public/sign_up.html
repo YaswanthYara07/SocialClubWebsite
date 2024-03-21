@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/99dda13991.js" crossorigin="anonymous"></script>
+        <title>Social Club</title>
+        <link rel="stylesheet" type="text/css" href="./stylesheets/sign_up.css">
+        <script src="./javascripts/AJAX.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <img src="brand.png" alt="Logo" id="logo">
+                 <!--Page Buttons and search bar modifed from https://www.youtube.com/watch?v=CQZxeoQeo5c&ab_channel=PRAROZ-->
+                <div id="header_buttons">
+                    <ul class="ul_h_buttons">
+                    <li>
+                        <a href="homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="eventpage.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="imageslidder.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="Contact_Us.html">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="class_search">
+                    <input class="input_search" type="Search" name="" placeholder="Search...">
+                    <button class="search_button" type="button">Find</button>
+                </div>
+            </div>
+        </header>
+        <form class="alignment">
+        <fieldset>
+        <h1 style="text-align:center">Sign Up</h1>
+                <h2 class="above_textbox">Username:</h2>
+                <input type="text" id="signup_username" name="username" class="name_textbox" placeholder="Username here..." required>
+                <h2 class="above_textbox">First name:</h2>
+                <input type="text" id="signup_first_name" name="first_name" class="name_textbox" placeholder="First name here..." required>
+                <h2 class="above_textbox">Last name:</h2>
+                <input type="text" id="signup_last_name" name="last_name" class="name_textbox" placeholder="Last name here..." required>
+                <h2 class="above_textbox">Email:</h2>
+                <input type="text" id="signup_email" name="email" class="name_textbox" placeholder="Email here..." required>
+                <h2 class="above_textbox">Phone Number</h2>
+                <input type="text" id="signup_phone" name="phone" class="name_textbox" placeholder="Phone Number..." required>
+                <h2 class="above_textbox">Date Of Birth</h2>
+                <input type="date" id="signup_dob_day" name="dob_day" class="name_textbox">
+                <h2 class="above_textbox">Course</h2>
+                <input type="text" id="signup_course" name="course" class="name_textbox" placeholder="Course..." required>
+                <h2 class="above_textbox">Password</h2>
+                <input type="password" id="signup_password" minlength="8" name="password" class="name_textbox" placeholder="Password..." required>
+
+            <div style="text-align:center;">
+                <br><br>
+
+                <button type="button" id="submit" onclick="signup()">Sign up</button>
+                <p id="hider"></p>
+
+            </div>
+        </fieldset>
+    </form>
+            <footer>
+                <div id="main_footer">
+                    <div id="contant_info">
+                        <h3 id="footer_titles">Contacts</h3>
+                        <p id="p_contact">                                   Phone Number:0412345678                                                   Email:thisDoesntWork@yahoo.com                                                   Fax:2039229129202</p>
+                    </div>
+                    <hr style="margin-left:300px;margin-right: 300px;">
+                    <h3 class="footer_titles">Other Pages</h3>
+                    <div class="header_buttons">
+                        <ul id="ul_h_buttons_2">
+                        <li class="ul_li_footer">
+                            <a href="homepage.html">Home</a>
+                        </li>
+                        <li class="ul_li_footer">
+                            <a href="eventpage.html">Events</a>
+                        </li>
+                        <li class="ul_li_footer">
+                            <a href="imageslidder.html">Gallery</a>
+                        </li>
+                        <li class="ul_li_footer">
+                            <a href="FAQ.html">FAQ</a>
+                        </li>
+                        <li class="ul_li_footer">
+                            <a href="Contact_Us.html">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <hr style="margin-left:300px;margin-right: 300px;margin-top: 100px;">
+                    <h3 id="footer_titles_3">Follow Us On</h3>
+                    <span style="font-size: 2em; color: #BFCFD4;">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class='fa fa-share-alt'></i>
+                    </span>
+                </div>
+            </footer>
+    </body>
+</html>

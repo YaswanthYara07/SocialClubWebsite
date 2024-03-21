@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel="stylesheet" type="text/css" href="./stylesheets/signinmain.css">
+        <title>signinmain</title>
+        <script src="./javascripts/sign_up.js"></script>
+
+    </head>
+    <body>
+      <header>
+        <div id="header">
+            <img src="./images/brand.png" alt="Logo" id="logo">
+             <!--Page Buttons and search bar modifed from https://www.youtube.com/watch?v=CQZxeoQeo5c&ab_channel=PRAROZ-->
+             <!--System_Admin.html-->
+            <div id="header_buttons">
+                <ul class="ul_h_buttons">
+                <li class="ul_li_header1">
+                    <a href="publicEvents.html">Events</a>
+                </li>
+                <li class="ul_li_header2">
+                    <a href="FAQ.html">FAQ</a>
+                </li>
+                <li class="ul_li_header4">
+                    <a href="Contact_Us.html">Contact</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div id="random_space">
+    </div>
+    <main>
+      <div class="mainSigninDiv">
+        <h1>Sign in here!</h1>
+      </div>
+      <div class="mainSigninDiv">
+        <button type="button" onclick="window.location.href='signin.html'">Member</button>
+        <br>
+      </div>
+      <div class="mainSigninDiv">
+        <button type="button" onclick="window.location.href='signInManager.html'">Manager</button>
+
+        <br>
+      </div>
+      <div class="mainSigninDiv">
+        <button type="button" onclick="window.location.href='signinAdmin.html'">Admin</button>
+        <br>
+      </div>
+      </main>
+
+
+
+
+      <footer>
+        <div id="main_footer" v-bind:class="{'pure-button-active':dark_mode, 'pure-button-primary':dark_mode}">
+            <div id="contant_info">
+                <h3 class="footer_titles">Contacts</h3>
+                <pre>Phone Number:0412345678                                                   Email:thisDoesntWork@yahoo.com                                                   Fax:2039229129202</pre>
+            </div>
+            <hr style="margin-left:300px;margin-right: 300px;">
+            <h3 class="footer_titles">Other Pages</h3>
+            <div class="header_buttons">
+                <ul id="ul_h_buttons_2">
+                    <li class="ul_li_footer">
+                        <a href="eventpage.html">Events</a>
+                    </li>
+                    <li class="ul_li_footer">
+                        <a href="imageSlidder.html">Gallery</a>
+                    </li>
+                    <li class="ul_li_footer">
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="ul_li_footer">
+                        <a href="Contact_Us.html">Contact</a>
+                    </li>
+                    <li class="ul_li_footer">
+                        <a href="System_Admin.html">Admin</a>
+                    </li>
+                </ul>
+            </div>
+            <hr style="margin-left:300px;margin-right: 300px;margin-top: 100px;">
+            <h3 id="footer_titles_3">Follow Us On</h3>
+            <span style="font-size: 2em; color: #BFCFD4;">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-share-alt"></i>
+            </span>
+        </div>
+    </footer>
+    </body>
+
+
+
+</html>

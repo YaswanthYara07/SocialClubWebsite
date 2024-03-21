@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>profile- css</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/project.css">
+    <script src="./javascripts/AJAX.js"></script>
+</head>
+<body id="background">
+  <div id="header">
+    <img src="brand.png" alt="Logo" id="logo">
+     <!--Page Buttons and search bar modifed from https://www.youtube.com/watch?v=CQZxeoQeo5c&ab_channel=PRAROZ-->
+    <div id="header_buttons">
+        <ul class="ul_h_buttons">
+        <li>
+            <a href="#">Login</a>
+        </li>
+        <li>
+            <a href="#">Events</a>
+        </li>
+        <li>
+            <a href="#">Gallery</a>
+        </li>
+        <li>
+            <a href="#">FAQ</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        </ul>
+    </div>
+    <div class="class_search">
+        <input class="input_search" type="Search" name="" placeholder="Search...">
+      <!--  <a href="#"><button type="find" class="search_button">Find</button></a>-->
+      <button type="button" class="search_button">Find</button>
+    </div>
+</div>
+
+  <h1>Hello {{User name Profile}}</h1>
+
+  <button type="button" id="but-1">EDIT ME</button>
+
+
+
+  <!-- <img src = "image1.jpg" alt="user photo" class = "profile_pic">-->
+  <div class="but1">
+    <div class = "div_but1">
+      <h3 id = "heading2">My Profile card </h3>
+      <div id = "but_div1"><button id="but" class="fname" type="button">EDIT Profile</button></div>
+     </div>
+
+    <div class="profile_pic">
+    <img src = "image1.jpg" alt="useoto" class = "profilepic">
+
+    <br>
+
+    <button class="button b1" type="button">connect</button>
+    <button class="button b2"  type="button">Edit Profile</button>
+    <button class="button b3" type="button">message/events</button>
+    </div>
+
+
+    <div></div>
+    <div class="row">
+      <div class="col">
+    <div><span class="header">22</span><span class="description">Friends</span></div>
+    <div><span class="header">10</span> <span class="description">photos</span></div>
+    <div><span class="header">5</span><span class="description">comments</span></div>
+    </div>
+    </div>
+
+    <div id="user_view">
+      <h4>UserName</h4>
+      <h4>place/DOB</h4>
+      <h3>Qualification</h3>
+      <h3>University</h3>
+    </div>
+    <div class="timeline">
+    <h4>write your timeline:</h4>
+    <textarea id ="v1" rows="4" cols="60">Type your yourself...</textarea>
+    </div>
+  </div>
+
+
+  <div id="div2">
+
+    <div class = "div1" onload="load_user_info()">
+      <h3 id = "heading1">My Account </h3>
+      <div id = "but_div"><button id="but1" class="fname" type="button">EDIT INFO</button></div>
+     </div>
+
+    <div id="user_info">
+    <h5>USER INFORMATION</h5>
+    <label>User name:</label><br>
+    <input type="text" class="fname" id="username"><br><br>
+    <div class="first">
+    <label>First Name:</label>
+    <input type="text" class="fname" id="first_name"><br><br>
+    </div>
+    <label>Last name:</label><br>
+    <input type="text" class="fname" id="last_name"><br><br>
+    <div class="first">
+    <label>Date of Birth:</label>
+    <input type="text" class ="fname" id="date_of_birth" ><br><br>
+    </div>
+    <label> Email:</label><br>
+    <input type="text" class ="fname" id="email"><br><br>
+    <div class="first">
+    <label>contact num:</label>
+    <input type="text"  class ="fname" id="phone_number"><br>
+    </div>
+    </div>
+
+    <hr>
+
+    <div id="address_info">
+      <h5>CONTACT INFORMATION</h5>
+    <label>Address:</label><br>
+    <input type="text" class="fname" id="address"><br><br>
+    <div class="first">
+    <label>city:</label><br>
+    <input type ="text" class="fname"><br>
+    </div>
+    <br>
+    <label>country:</label><br>
+    <input type ="text" class="fname"><br><br>
+    <div class="first">
+    <label>country:</label><br>
+    <input type ="text" class="fname"><br>
+    </div>
+    <br>
+    <label>postal code:</label><br>
+    <input type ="text" class="fname">
+    </div>
+
+    <div class="ps_button">
+      <button type="button">SAVE PROFILE</button>
+       </div>
+  </div>
+
+
+
+  <div id="div3">
+    <div class = "div1">
+      <h3 id = "head">My Qualifications </h3>
+      <div class = "but_div1"><button id="but2" class="fname" type="button">EDIT</button></div>
+     </div>
+
+    <div id="educ_qualify">
+    <h4>Educational Qualification</h4>
+    <label>Education:</label><br>
+    <input type = "text" class="fname"><br><br>
+    <div class="first">
+    <label>University/school Name:</label>
+    <input type ="text" class="fname"><br><br>
+    </div>
+    <label>Skills: </label><br>
+    <input type ="text" class="fname"><br><br>
+    <div class="first">
+    <label>Interested Area: </label>
+    <input type ="text" class="fname"><br><br>
+    </div>
+    <label>Hobbies:</label><br>
+    <input type ="text" class="fname">
+    </div>
+    <hr />
+    <div id= "update_ps">
+      <h4>Update password</h4>
+      <label>old password:</label>
+      <input type ="text" class="fname"><br><br>
+      <label>New password:</label>
+      <input type ="text" class="fname"><br><br>
+      <label>Re-Type password:</label>
+      <input type ="text" class="fname">
+
+      <div class="ps_button">
+     <button type="button">SAVE PROFILE</button>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

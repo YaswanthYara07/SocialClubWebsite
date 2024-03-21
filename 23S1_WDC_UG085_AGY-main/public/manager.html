@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Social Club</title>
+    <script src="./javascripts/AJAX.js"></script>
+    <script src="https://kit.fontawesome.com/99dda13991.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/homepage.css">
+</head>
+<body onload="showMembers()">
+    <header>
+    <div id="header">
+        <!--Page Buttons and search bar modified from https://www.youtube.com/watch?v=CQZxeoQeo5c&ab_channel=PRAROZ
+        Need to find a way to give admin access to username-->
+        <div id="header_buttons">
+            <ul class="ul_h_buttons">
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="sign_up.html">Login</a>
+                </li>
+                <li>
+                    <a href="eventpage.html">Events</a>
+                </li>
+                <li>
+                    <a href="imageSlidder.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="FAQ.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="Contact_Us.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search_class">
+            <input class="input_search" type="search" name="" placeholder="Search...">
+            <button type="button" class="search_button">Find</button>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+<main>
+    <div style="margin-left: 10%;">
+        <h2>My Details</h2>
+        <table>
+            <tr>
+                <th>Username</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td style="height:50px; width:250px" class="name_textbox ">
+                <textarea id="user_name" style="width:250px; height:50px; border: none; outline: none; resize: none; font-size: 16pt; text-align:center;">username</textarea>
+                </td>
+                <td style="height:50px; width:250px" class="name_textbox ">
+                <textarea id="user_first" style="width:250px; height:50px; border: none; outline: none; resize: none; font-size: 16pt; text-align:center;">first name</textarea>
+                </td>
+                <td style="height:50px; width:250px" class="name_textbox ">
+                <textarea id="user_last" style="width:250px; height:50px; border: none; outline: none; resize: none; font-size: 16pt; text-align:center;">last name</textarea>
+                </td>
+                <td style="height:50px; width:250px" class="name_textbox ">
+                <textarea id="user_mail" style="width:250px; height:50px; border: none; outline: none; resize: none; font-size: 16pt; text-align:center;">email</textarea>
+                </td>
+            </tr>
+        </table>
+        <button type="button" style="float:right; margin-right:5%; margin-top:1%; height:75px; width:115px; font-size: 16pt; cursor: pointer;">Save Changes</button>
+        <button type="button" style="float:right; height:75px; margin-left: 10px; margin-right: 10px; width:115px; margin-top:1%; font-size: 16pt; cursor: pointer;">Edit My Details</button>
+    </div>
+    <br><br>
+    <div style="margin-left: 10%;">
+        <h2>User Details
+            <input type="text" class="form-control" id="search1" placeholder="Search for user..." autocomplete="off" style="height:40px; width:250px; font-size: 14pt;">
+            <textarea id="banned" style="width:250px; height:40px; border: none; outline: none; resize: none; font-size: 14pt; text-align:center;"></textarea>
+        </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="results1">
+
+                </tbody>
+        </table>
+        <button type="button" style="float:right; margin-right:5%; margin-top:1%; height:75px; width:115px; font-size: 16pt; cursor: pointer;">Save Changes</button>
+        <button type="button" onclick="ban_user()" style="float:right; height:75px; margin-right: 10px; width:115px; margin-top:1%; font-size: 16pt; cursor: pointer; color:red">Ban User</button>
+        <button type="button" style="float:right; height:75px; margin-right: 10px; width:115px; margin-left: 10px; margin-top:1%; font-size: 16pt; cursor: pointer;">Edit User</button>
+    </div>
+    <br><br>
+    <div style="margin-left: 10%; margin-bottom: 40px;">
+        <h2>Club Posts
+            <input type="text" class="form-control" id="search2" placeholder="Search for club posts..." autocomplete="off" style="height:40px; width:250px; font-size: 14pt;">
+            <textarea id="deleted" style="width:250px; height:40px; border: none; outline: none; resize: none; font-size: 14pt; text-align:center;"></textarea>
+        </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Post name</th>
+                    <th>Post ID</th>
+                    <th>Post Preview</th>
+                </tr>
+            </thead>
+            <tbody id="results2">
+
+            </tbody>
+        </table>
+        <button type="button" style="float:right; margin-right:5%; margin-top:4%; height:75px; width:115px; font-size: 16pt; cursor: pointer;">Save Changes</button>
+        <button type="button" onclick="delete_post()" style="float:right; height:75px; margin-right: 10px; width:115px; margin-top:4%; font-size: 16pt; cursor: pointer; color:red">Delete Post</button>
+        <button type="button" style= "float:right; height:75px; margin-left: 10px; margin-right: 10px; width:115px; margin-top:4%; font-size: 16pt; cursor: pointer;">Edit Post</button>
+    </div>
+
+
+
+    <input type="text" id="club_name" placeholder="Club Name" >
+    <button type="button" onclick="showMember()">BUTT</button>
+    <div id="hide"></div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div id="main_footer">
+            <div id="contant_info">
+                <h3 class="footer_titles">Contacts</h3>
+                <pre>                     Phone Number:0412345678                                                   Email:thisDoesntWork@yahoo.com                                                   Fax:2039229129202</pre>
+            </div>
+            <hr style="margin-left:300px;margin-right: 300px;">
+            <h3 class="footer_titles">Other Pages</h3>
+            <div id="footer_buttons">
+                <ul id="ul_h_buttons_2">
+                    <li class="ul_li_footer">
+                        <a href="sign_up.html">Login</a>
+                    </li>
+                    <li class="ul_li_footer">
+                        <a href="eventpage.html">Events</a>
+                    </li>
+                    <li class="ul_li_footer">
+                        <a href="imageSlidder.html">Gallery</a>
+                    </li>
+                    <li class="ul_li_footer">
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="ul_li_footer">
+                        <a href="Contact_Us.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr style="margin-left:300px;margin-right: 300px;margin-top: 100px;">
+            <h3 id="footer_titles_3">Follow Us On</h3>
+            <span style="font-size: 2em; color: #BFCFD4;">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-share-alt"></i>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

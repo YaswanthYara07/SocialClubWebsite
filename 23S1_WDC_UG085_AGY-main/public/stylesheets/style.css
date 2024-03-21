@@ -1,0 +1,279 @@
+/* Reset default browser styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Global styles */
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  /* Header styles */
+
+#hidden {
+  display: none;
+}
+
+
+.Div{
+
+  margin: 20px;
+  width: 400px;
+  text-align: center;
+  border-radius: 15px;
+  height: auto;
+  padding: 20px;
+  background-color: lightcoral;
+  font-family: Arial, Helvetica, sans-serif;
+
+  transition: box-shadow 0.3s;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+
+.titles {
+
+  font-weight: bold;
+
+
+  }
+
+  .contents{
+font-weight: normal;
+  font-family: Arial;
+
+
+
+
+  }
+  #header{
+      margin:auto;
+      /*width: 374px;*/
+      height: 50px;
+      padding:12px;
+      background-color: white;
+      border: 1px solid red;
+  }
+  #header_buttons{
+      width: 400px;
+      float:left;
+      height: 70px;
+  }
+  /* Modifed From https://www.youtube.com/watch?v=CQZxeoQeo5c&ab_channel=PRAROZ*/
+  ul{
+      margin-left: 900px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+  ul li{
+      list-style: none;
+      margin-right: 50px;
+      margin-top: 6px;
+      font-size:14px;
+
+  }
+  ul li a{
+      text-decoration: none;
+      color:black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      transition: 0.4s ease-in-out;
+  }
+  ul li a:hover{
+      color:lightblue
+  }
+  .class_search{
+      margin-left:1150px;
+      margin-top:-185px;
+  }
+  #logo{
+      position:relative;
+      margin-left:-370px;
+      z-index: 1;
+  }
+
+
+  /* Navigation styles */
+
+  nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
+
+  nav a {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+  }
+
+  /* Main section styles */
+
+  main {
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  section {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+
+  section:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  section h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  section p {
+    margin-bottom: 10px;
+  }
+
+  section small {
+    font-size: 0.8em;
+    color: #999;
+  }
+
+  /* Footer styles */
+
+
+#main_footer{
+  margin:auto;
+  /*width: 374px;*/
+  height: 400px;
+  padding:12px;
+  background-color: white;
+  border: 1px solid red;
+}
+#contact_info{
+  width:100px;
+  float:left;
+  height: 100px;
+  margin:50px;
+}
+#p_contact{
+  font-family:Arial, Helvetica, sans-serif;
+}
+#footer_titles{
+  text-align: center;
+}
+#ul_h_buttons_2{
+  margin-left: 750px;
+  /*the display lets us change the orientation*/
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#ul_li_footer{
+  list-style: none;
+  margin-right: 200px;
+  font-size:14px;
+
+}
+i.fa-brands{
+  margin-top: 20px;
+  color:black;
+  margin-left: 350px;
+  margin-right: 50px;
+}
+i.fa-twitter{
+  color:black;
+  margin-left: 250px;
+  margin-right: 50px;
+}
+i.fa-share-alt{
+  color:black;
+  margin-left: 250px;
+  margin-right: 50px;
+}
+#footer_titles_3{
+  margin-top: 30px;
+  text-align: center;
+}
+#content_header_2{
+  margin-left: 600px;
+}
+#random_space{
+  height: 100px;
+  background-color: white;
+}
+
+  #introduction{
+    max-height: 200px;
+    overflow: hidden;
+  }
+
+  #discussion{
+    display: block;
+    text-align: center;
+    margin: auto;
+
+    top: -20;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+
+  .wrapper {
+    display: flex;
+  }
+
+#EVENTS{
+    height:50px;
+    width:200px;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 40px;
+    background-color: rgb(248,131,121);;
+    border-color: darkgoldenrod;
+    cursor: pointer;
+}

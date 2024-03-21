@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Social Club</title>
+    <script src="./javascripts/AJAX.js"></script>
+    <script src="https://kit.fontawesome.com/99dda13991.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/club_manager.css">
+</head>
+<body>
+    <div id="header">
+        <!--Page Buttons and search bar modified from https://www.youtube.com/watch?v=CQZxeoQeo5c&ab_channel=PRAROZ
+        Need to find a way to give admin access to username-->
+        <div id="header_buttons">
+            <ul class="ul_h_buttons">
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="sign_up.html">Login</a>
+                </li>
+                <li>
+                    <a href="eventpage.html">Events</a>
+                </li>
+                <li>
+                    <a href="Forum.html">Forum</a>
+                </li>
+                <li>
+                    <a href="FAQ.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="Contact_Us.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="user_details_div" style="margin-left: 33%;">
+        <h1 style="margin-left: 20%;">Managers</h1>
+        <h2 style="margin-left: 50px;">User Search
+            <input type="text" class="search-bars" id="search_user_details" placeholder="Search for users..." autocomplete="off">
+        </h2>
+        <div>
+            <textarea id="user_notice" class="message-box" readonly></textarea>
+        </div>
+            <div id="result_user_details">
+
+            </div>
+
+    </div>
+    <div style="height: 110px; margin-top: 470px;">
+        <button type="button" class="admin_buttons" onclick="admin_edit_user()" style="margin-right:34%;">Save Changes</button>
+        <button type="button" class="admin_buttons" onclick="ban_user()" style="margin-right: 10px; color:red">Delete User</button>
+        <button type="button" class="admin_buttons" onclick="set_profile_manager(), message()" style="margin-right: 10px; color:blue">Create User</button>
+        <button type="button" class="admin_buttons" onclick="editing_user()" style="margin-right: 10px; margin-left: 10px;">Editing Enable</button>
+    </div>
+    <label>View Members</label>
+    <input type="text" id="club_name" placeholder="Club Name" >
+    <button type="button" onclick="showMember()">Submit</button>
+    <label>View Events</label>
+    <input type="text" id="member_event" placeholder="EventName" >
+    <button type="button" onclick="managerEvent()">Submit</button>
+    <div id="hide"></div>
+    <footer>
+        <div id="main_footer">
+            <div id="contant_info">
+                <h3 class="footer_titles">Contacts</h3>
+                <pre>                     Phone Number:0412345678                                                   Email:thisDoesntWork@yahoo.com                                                   Fax:2039229129202</pre>
+            </div>
+            <hr style="margin-left:300px;margin-right: 300px;">
+            <h3 class="footer_titles">Other Pages</h3>
+            <div id="footer_buttons">
+                <ul id="ul_h_buttons_2">
+                    <li class="ul_li_footer">
+                        <a href="sign_up.html">Login</a>
+                    </li>
+                    <li class="ul_li_footer">
+                        <a href="eventpage.html">Events</a>
+                    </li>
+                    <li class="ul_li_footer">
+                        <a href="imageSlidder.html">Gallery</a>
+                    </li>
+                    <li class="ul_li_footer">
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="ul_li_footer">
+                        <a href="Contact_Us.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr style="margin-left:300px;margin-right: 300px;margin-top: 100px;">
+            <h3 id="footer_titles_3">Follow Us On</h3>
+            <span style="font-size: 2em; color: #BFCFD4;">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-share-alt"></i>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
+<script type="text/javascript">
+
+    const search_input_user = document.querySelector('#search_user_details');
+
+    const results_body_user = document.querySelector('#result_user_details');
+
+    load_user_search();
+
+        function load_user_search(query = ''){
+        const request = new XMLHttpRequest();
+        request.open('GET', `/search_user?q=${query}`);
+        request.onload = () => {
+            const results = JSON.parse(request.responseText);
+            let html = '';
+            if(results.length > 0){
+                    results.forEach(result => {
+                        html += `
+                    <div>
+                        <div>
+                            <h3 style="margin-left:260px;">Username</h3>
+                            <textarea id="user_username" style="width:600px; height:50px; outline: none; resize: none; font-size: 16pt; text-align:center;" readonly>`+result.username+`</textarea>
+                        </div>
+                        <div>
+                            <h3 style="margin-left:260px;">First name</h3>
+                            <textarea id="user_first_name" style="width:600px; height:50px; outline: none; resize: none; font-size: 16pt; text-align:center;" readonly>`+result.first_name+`</textarea>
+                        </div>
+                        <div>
+                            <h3 style="margin-left:260px;">Last name</h3>
+                            <textarea id="user_last_name" style="width:600px; height:50px; outline: none; resize: none; font-size: 16pt; text-align:center;" readonly>`+result.last_name+`</textarea>
+                        </div>
+                        <div>
+                            <h3 style="margin-left:280px;">Email</h3>
+                            <textarea id="user_email" style="width:600px; height:50px; outline: none; resize: none; font-size: 16pt; text-align:center;" readonly>`+result.email+`</textarea>
+                        </div>
+                        <div>
+                            <textarea id="user_id" style="width:250px; height:50px; visibility:hidden; display:none; border: none; outline: none; resize: none; font-size: 16pt; text-align:center;">`+result.user_id+`</textarea>
+                        </div>
+                    </div>
+                        `;
+                    });
+                     } else {
+                        html += `
+                    <div>
+                        <div>
+                            <h3 style="margin-left:260px;">Username</h3>
+                            <textarea id="user_username" style="width:600px; height:50px; outline: none; resize: none; font-size: 16pt; text-align:center;" readonly>No username found</textarea>
+                        </div>
+                        <div>
+                            <h3 style="margin-left:260px;">First name</h3>
+                            <textarea id="user_first_name" style="width:600px; height:50px; outline: none; resize: none; font-size: 16pt; text-align:center;" readonly>No first name found</textarea>
+                        </div>
+                        <div>
+                            <h3 style="margin-left:260px;">Last name</h3>
+                            <textarea id="user_last_name" style="width:600px; height:50px; outline: none; resize: none; font-size: 16pt; text-align:center;" readonly>No last name found</textarea>
+                        </div>
+                        <div>
+                            <h3 style="margin-left:260px;">Email</h3>
+                            <textarea id="user_email" style="width:600px; height:50px; outline: none; resize: none; font-size: 16pt; text-align:center;" readonly>No email found</textarea>
+                        </div>
+                        <div>
+                            <textarea id="user_id" style="width:250px; height:50px; visibility:hidden; display:none; border: none; outline: none; resize: none; font-size: 16pt; text-align:center;"></textarea>
+                        </div>
+                    </div>
+                         `;
+                        }
+            results_body_user.innerHTML = html;
+        };
+        request.send();
+    }
+
+    search_input_user.addEventListener('input', () => {
+        const query = search_input_user.value;
+        load_user_search(query);
+    });
+
+function message(){
+document.getElementById("user_notice").innerText="User created";
+};
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>profile- css</title>
+
+    <link rel="stylesheet" type="text/css" href="image.css">
+
+    <!-- In this prac we'll be using Vue directly from CDN rather than via ES Module imports. You can use either method in your projects. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+    <!-- Replace the above script tag with this one if you want to use Vue 3    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="image.js" defer></script>
+</head>
+
+<body class="back">
+
+   <div class ="set">
+
+   <div class="appp">
+      <img v-bind:src="special.url" id="img1" alt="special" onclick="vueinst.special=SPECIALS[i++];" />
+      <h3>{{special.name}}</h3>
+
+      <div>
+
+        <!-- Next and Previous icon to change images -->
+        <a class="previous">
+            <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+        <a class="next">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+        </a>
+        </div>
+ </div>
+
+   </div>
+
+
+
+
+</body>
+
+</html>
